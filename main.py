@@ -232,8 +232,10 @@ st.subheader("Heatmap")
 # sns.heatmap(df.iloc[:, 3:6].corr(), annot = True, cmap = "Reds")
 # st.pyplot(heat)
 
-heatmap = "heatmap.PNG"
+heatmap = "heatmap.png"
 st.image(heatmap, caption = "Heatmap of correlation between variables.")
+
+
 st.code("""
 heat = plt.figure(figsize = (12, 8))
 sns.set(font_scale = 1.4)
